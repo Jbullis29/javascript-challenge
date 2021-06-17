@@ -43,14 +43,8 @@ var form = document.getElementById('form');
             var cell = row.append('td');
             cell.text(value);
             console.log('gottem')}
+            else if(endDate > convertDate){}
+        
         });
-        data.forEach((sighting)=>{
-            var row = table.append("tr");
-            Object.entries(sighting).forEach(function([key, value]){
-                const convertDate = Date.parse(sighting.datetime);
-                if(endDate >= convertDate){
-                var cell = row.append('');
-                cell.text(value);
-                console.log('yuurp')}
-            });
-        })
+});
+    }
